@@ -1,0 +1,45 @@
+{
+  "name": "GPUImage",
+  "version": "0.1.7",
+  "license": "BSD",
+  "summary": "An open source iOS framework for GPU-based image and video processing.",
+  "homepage": "https://github.com/BradLarson/GPUImage",
+  "authors": {
+    "Brad Larson": "contact@sunsetlakesoftware.com"
+  },
+  "source": {
+    "git": "https://github.com/sysu-huangwei/GPUImage.git",
+    "branch": "master"
+  },
+  "source_files": "framework/Source/**/*.{h,m,mm}",
+  "requires_arc": true,
+  "xcconfig": {
+    "CLANG_MODULES_AUTOLINK": "YES"
+  },
+  "platforms": {
+    "ios": "9.0",
+    "osx": "10.6"
+  },
+  "ios": {
+    "exclude_files": "framework/Source/Mac",
+    "frameworks": [
+      "OpenGLES",
+      "CoreMedia",
+      "QuartzCore",
+      "AVFoundation"
+    ]
+  },
+  "osx": {
+    "exclude_files": [
+      "framework/Source/iOS",
+      "framework/Source/GPUImageFilterPipeline.*",
+      "framework/Source/GPUImageMovieComposition.*",
+      "framework/Source/GPUImageVideoCamera.*",
+      "framework/Source/GPUImageStillCamera.*",
+      "framework/Source/GPUImageUIElement.*"
+    ],
+    "xcconfig": {
+      "GCC_WARN_ABOUT_RETURN_TYPE": "YES"
+    }
+  }
+}

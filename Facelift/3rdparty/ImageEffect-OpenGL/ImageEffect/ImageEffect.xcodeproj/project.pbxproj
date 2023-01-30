@@ -1,0 +1,506 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3A8AC5D72931E0200078DF7E /* InputImageFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AC5D52931E0200078DF7E /* InputImageFrameBuffer.cpp */; };
+		3A8AC5DA2931EAC00078DF7E /* UIImage+TransferImageData.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AC5D92931EAC00078DF7E /* UIImage+TransferImageData.mm */; };
+		3A8AC5DD2938695C0078DF7E /* OutputFrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3A8AC5DB2938695C0078DF7E /* OutputFrameBuffer.cpp */; };
+		3AA8BF502987C63300F0BEB4 /* CopyFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 3AA8BF4E2987C63300F0BEB4 /* CopyFilter.cpp */; };
+		FC29E7AA273AAB31003F6696 /* EffectEngine.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC29E7A8273AAB31003F6696 /* EffectEngine.cpp */; };
+		FC29E7B0273B6B4D003F6696 /* cJSON.c in Sources */ = {isa = PBXBuildFile; fileRef = FC29E7AE273B6B4D003F6696 /* cJSON.c */; };
+		FC29E7B4273B6B80003F6696 /* EffectConfigParser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FC29E7B2273B6B80003F6696 /* EffectConfigParser.cpp */; };
+		FCCA1EBF273945CE00D5CFCA /* ImageEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1EBE273945CE00D5CFCA /* ImageEffect.m */; };
+		FCCA1EC0273945CE00D5CFCA /* ImageEffect.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FCCA1EBD273945CE00D5CFCA /* ImageEffect.h */; };
+		FCCA1ECD2739473D00D5CFCA /* BaseLog.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1ECC2739473D00D5CFCA /* BaseLog.cpp */; };
+		FCCA1EE6273947EF00D5CFCA /* FrameBuffer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1EDF273947EE00D5CFCA /* FrameBuffer.cpp */; };
+		FCCA1EE7273947EF00D5CFCA /* Program.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1EE0273947EE00D5CFCA /* Program.cpp */; };
+		FCCA1EE8273947EF00D5CFCA /* ProgramPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1EE2273947EE00D5CFCA /* ProgramPool.cpp */; };
+		FCCA1EE9273947EF00D5CFCA /* FrameBufferPool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1EE4273947EF00D5CFCA /* FrameBufferPool.cpp */; };
+		FCCA1F1E2739488200D5CFCA /* MeshFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1EFB2739488200D5CFCA /* MeshFilter.cpp */; };
+		FCCA1F202739488200D5CFCA /* BackgroundMeshFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F032739488200D5CFCA /* BackgroundMeshFilter.cpp */; };
+		FCCA1F212739488200D5CFCA /* FilterFactory.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F072739488200D5CFCA /* FilterFactory.cpp */; };
+		FCCA1F232739488200D5CFCA /* FilterChain.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F0D2739488200D5CFCA /* FilterChain.cpp */; };
+		FCCA1F242739488200D5CFCA /* BaseFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F102739488200D5CFCA /* BaseFilter.cpp */; };
+		FCCA1F252739488200D5CFCA /* FilterNodeDescription.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F122739488200D5CFCA /* FilterNodeDescription.cpp */; };
+		FCCA1F262739488200D5CFCA /* FilterNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F132739488200D5CFCA /* FilterNode.cpp */; };
+		FCCA1F3027394C6600D5CFCA /* FileUtilsForIOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F2F27394C6600D5CFCA /* FileUtilsForIOS.mm */; };
+		FCCA1F3527394C9D00D5CFCA /* BaseGLUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FCCA1F3327394C9D00D5CFCA /* BaseGLUtils.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FCCA1EB8273945CE00D5CFCA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FCCA1EC0273945CE00D5CFCA /* ImageEffect.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3A8AC5D52931E0200078DF7E /* InputImageFrameBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = InputImageFrameBuffer.cpp; sourceTree = "<group>"; };
+		3A8AC5D62931E0200078DF7E /* InputImageFrameBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = InputImageFrameBuffer.hpp; sourceTree = "<group>"; };
+		3A8AC5D82931EAC00078DF7E /* UIImage+TransferImageData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+TransferImageData.h"; sourceTree = "<group>"; };
+		3A8AC5D92931EAC00078DF7E /* UIImage+TransferImageData.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = "UIImage+TransferImageData.mm"; sourceTree = "<group>"; };
+		3A8AC5DB2938695C0078DF7E /* OutputFrameBuffer.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = OutputFrameBuffer.cpp; sourceTree = "<group>"; };
+		3A8AC5DC2938695C0078DF7E /* OutputFrameBuffer.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = OutputFrameBuffer.hpp; sourceTree = "<group>"; };
+		3AA8BF4E2987C63300F0BEB4 /* CopyFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CopyFilter.cpp; sourceTree = "<group>"; };
+		3AA8BF4F2987C63300F0BEB4 /* CopyFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CopyFilter.hpp; sourceTree = "<group>"; };
+		FC29E7A8273AAB31003F6696 /* EffectEngine.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EffectEngine.cpp; sourceTree = "<group>"; };
+		FC29E7A9273AAB31003F6696 /* EffectEngine.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EffectEngine.hpp; sourceTree = "<group>"; };
+		FC29E7AE273B6B4D003F6696 /* cJSON.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = cJSON.c; sourceTree = "<group>"; };
+		FC29E7AF273B6B4D003F6696 /* cJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cJSON.h; sourceTree = "<group>"; };
+		FC29E7B2273B6B80003F6696 /* EffectConfigParser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = EffectConfigParser.cpp; sourceTree = "<group>"; };
+		FC29E7B3273B6B80003F6696 /* EffectConfigParser.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = EffectConfigParser.hpp; sourceTree = "<group>"; };
+		FCCA1EBA273945CE00D5CFCA /* libImageEffect.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libImageEffect.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FCCA1EBD273945CE00D5CFCA /* ImageEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageEffect.h; sourceTree = "<group>"; };
+		FCCA1EBE273945CE00D5CFCA /* ImageEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageEffect.m; sourceTree = "<group>"; };
+		FCCA1EC92739473D00D5CFCA /* BaseDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDefine.h; sourceTree = "<group>"; };
+		FCCA1ECA2739473D00D5CFCA /* BaseLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseLog.h; sourceTree = "<group>"; };
+		FCCA1ECB2739473D00D5CFCA /* BasePlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BasePlatform.h; sourceTree = "<group>"; };
+		FCCA1ECC2739473D00D5CFCA /* BaseLog.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseLog.cpp; sourceTree = "<group>"; };
+		FCCA1EDE273947EE00D5CFCA /* FrameBufferPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FrameBufferPool.hpp; sourceTree = "<group>"; };
+		FCCA1EDF273947EE00D5CFCA /* FrameBuffer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBuffer.cpp; sourceTree = "<group>"; };
+		FCCA1EE0273947EE00D5CFCA /* Program.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Program.cpp; sourceTree = "<group>"; };
+		FCCA1EE1273947EE00D5CFCA /* FrameBuffer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FrameBuffer.hpp; sourceTree = "<group>"; };
+		FCCA1EE2273947EE00D5CFCA /* ProgramPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ProgramPool.cpp; sourceTree = "<group>"; };
+		FCCA1EE3273947EE00D5CFCA /* ProgramPool.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = ProgramPool.hpp; sourceTree = "<group>"; };
+		FCCA1EE4273947EF00D5CFCA /* FrameBufferPool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FrameBufferPool.cpp; sourceTree = "<group>"; };
+		FCCA1EE5273947EF00D5CFCA /* Program.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Program.hpp; sourceTree = "<group>"; };
+		FCCA1EF02739488200D5CFCA /* BackgroundMeshFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BackgroundMeshFilter.hpp; sourceTree = "<group>"; };
+		FCCA1EF52739488200D5CFCA /* MeshFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = MeshFilter.hpp; sourceTree = "<group>"; };
+		FCCA1EFB2739488200D5CFCA /* MeshFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MeshFilter.cpp; sourceTree = "<group>"; };
+		FCCA1F032739488200D5CFCA /* BackgroundMeshFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BackgroundMeshFilter.cpp; sourceTree = "<group>"; };
+		FCCA1F062739488200D5CFCA /* FilterFactory.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterFactory.hpp; sourceTree = "<group>"; };
+		FCCA1F072739488200D5CFCA /* FilterFactory.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterFactory.cpp; sourceTree = "<group>"; };
+		FCCA1F092739488200D5CFCA /* FilterNodeDescription.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterNodeDescription.hpp; sourceTree = "<group>"; };
+		FCCA1F0A2739488200D5CFCA /* FilterNode.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterNode.hpp; sourceTree = "<group>"; };
+		FCCA1F0C2739488200D5CFCA /* BaseFilter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseFilter.hpp; sourceTree = "<group>"; };
+		FCCA1F0D2739488200D5CFCA /* FilterChain.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterChain.cpp; sourceTree = "<group>"; };
+		FCCA1F0E2739488200D5CFCA /* FilterConstant.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterConstant.hpp; sourceTree = "<group>"; };
+		FCCA1F0F2739488200D5CFCA /* FilterDescription.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterDescription.hpp; sourceTree = "<group>"; };
+		FCCA1F102739488200D5CFCA /* BaseFilter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseFilter.cpp; sourceTree = "<group>"; };
+		FCCA1F112739488200D5CFCA /* FilterChain.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = FilterChain.hpp; sourceTree = "<group>"; };
+		FCCA1F122739488200D5CFCA /* FilterNodeDescription.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterNodeDescription.cpp; sourceTree = "<group>"; };
+		FCCA1F132739488200D5CFCA /* FilterNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = FilterNode.cpp; sourceTree = "<group>"; };
+		FCCA1F2E27394C6600D5CFCA /* FileUtilsForIOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FileUtilsForIOS.h; sourceTree = "<group>"; };
+		FCCA1F2F27394C6600D5CFCA /* FileUtilsForIOS.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FileUtilsForIOS.mm; sourceTree = "<group>"; };
+		FCCA1F3327394C9D00D5CFCA /* BaseGLUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = BaseGLUtils.cpp; sourceTree = "<group>"; };
+		FCCA1F3427394C9D00D5CFCA /* BaseGLUtils.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = BaseGLUtils.hpp; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FCCA1EB7273945CE00D5CFCA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FC29E7A7273AAB1C003F6696 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				FC29E7A8273AAB31003F6696 /* EffectEngine.cpp */,
+				FC29E7A9273AAB31003F6696 /* EffectEngine.hpp */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		FC29E7AD273B6B32003F6696 /* Parse */ = {
+			isa = PBXGroup;
+			children = (
+				FC29E7AE273B6B4D003F6696 /* cJSON.c */,
+				FC29E7AF273B6B4D003F6696 /* cJSON.h */,
+				FC29E7B2273B6B80003F6696 /* EffectConfigParser.cpp */,
+				FC29E7B3273B6B80003F6696 /* EffectConfigParser.hpp */,
+			);
+			path = Parse;
+			sourceTree = "<group>";
+		};
+		FCCA1EB1273945CE00D5CFCA = {
+			isa = PBXGroup;
+			children = (
+				FC29E7AD273B6B32003F6696 /* Parse */,
+				FC29E7A7273AAB1C003F6696 /* Interface */,
+				FCCA1EC82739472D00D5CFCA /* Define */,
+				FCCA1ECF2739479700D5CFCA /* OpenGLBase */,
+				FCCA1EEC2739488200D5CFCA /* Filters */,
+				FCCA1EBC273945CE00D5CFCA /* ImageEffect */,
+				FCCA1EBB273945CE00D5CFCA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FCCA1EBB273945CE00D5CFCA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1EBA273945CE00D5CFCA /* libImageEffect.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FCCA1EBC273945CE00D5CFCA /* ImageEffect */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1EBD273945CE00D5CFCA /* ImageEffect.h */,
+				FCCA1EBE273945CE00D5CFCA /* ImageEffect.m */,
+			);
+			path = ImageEffect;
+			sourceTree = "<group>";
+		};
+		FCCA1EC82739472D00D5CFCA /* Define */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1EC92739473D00D5CFCA /* BaseDefine.h */,
+				FCCA1ECC2739473D00D5CFCA /* BaseLog.cpp */,
+				FCCA1ECA2739473D00D5CFCA /* BaseLog.h */,
+				FCCA1ECB2739473D00D5CFCA /* BasePlatform.h */,
+			);
+			path = Define;
+			sourceTree = "<group>";
+		};
+		FCCA1ECF2739479700D5CFCA /* OpenGLBase */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F3227394C7000D5CFCA /* Utils */,
+				FCCA1F2C27394C1800D5CFCA /* Platform */,
+				FCCA1EDF273947EE00D5CFCA /* FrameBuffer.cpp */,
+				FCCA1EE1273947EE00D5CFCA /* FrameBuffer.hpp */,
+				3A8AC5D52931E0200078DF7E /* InputImageFrameBuffer.cpp */,
+				3A8AC5D62931E0200078DF7E /* InputImageFrameBuffer.hpp */,
+				3A8AC5DB2938695C0078DF7E /* OutputFrameBuffer.cpp */,
+				3A8AC5DC2938695C0078DF7E /* OutputFrameBuffer.hpp */,
+				FCCA1EE4273947EF00D5CFCA /* FrameBufferPool.cpp */,
+				FCCA1EDE273947EE00D5CFCA /* FrameBufferPool.hpp */,
+				FCCA1EE0273947EE00D5CFCA /* Program.cpp */,
+				FCCA1EE5273947EF00D5CFCA /* Program.hpp */,
+				FCCA1EE2273947EE00D5CFCA /* ProgramPool.cpp */,
+				FCCA1EE3273947EE00D5CFCA /* ProgramPool.hpp */,
+			);
+			path = OpenGLBase;
+			sourceTree = "<group>";
+		};
+		FCCA1EEC2739488200D5CFCA /* Filters */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F082739488200D5CFCA /* base */,
+				FCCA1F052739488200D5CFCA /* factory */,
+				FCCA1EF52739488200D5CFCA /* MeshFilter.hpp */,
+				FCCA1EFB2739488200D5CFCA /* MeshFilter.cpp */,
+				FCCA1EF02739488200D5CFCA /* BackgroundMeshFilter.hpp */,
+				FCCA1F032739488200D5CFCA /* BackgroundMeshFilter.cpp */,
+				3AA8BF4F2987C63300F0BEB4 /* CopyFilter.hpp */,
+				3AA8BF4E2987C63300F0BEB4 /* CopyFilter.cpp */,
+			);
+			path = Filters;
+			sourceTree = "<group>";
+		};
+		FCCA1F052739488200D5CFCA /* factory */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F062739488200D5CFCA /* FilterFactory.hpp */,
+				FCCA1F072739488200D5CFCA /* FilterFactory.cpp */,
+			);
+			path = factory;
+			sourceTree = "<group>";
+		};
+		FCCA1F082739488200D5CFCA /* base */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F0E2739488200D5CFCA /* FilterConstant.hpp */,
+				FCCA1F0C2739488200D5CFCA /* BaseFilter.hpp */,
+				FCCA1F102739488200D5CFCA /* BaseFilter.cpp */,
+				FCCA1F0F2739488200D5CFCA /* FilterDescription.hpp */,
+				FCCA1F092739488200D5CFCA /* FilterNodeDescription.hpp */,
+				FCCA1F122739488200D5CFCA /* FilterNodeDescription.cpp */,
+				FCCA1F0A2739488200D5CFCA /* FilterNode.hpp */,
+				FCCA1F132739488200D5CFCA /* FilterNode.cpp */,
+				FCCA1F0D2739488200D5CFCA /* FilterChain.cpp */,
+				FCCA1F112739488200D5CFCA /* FilterChain.hpp */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		FCCA1F2C27394C1800D5CFCA /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F2D27394C1F00D5CFCA /* iOS */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		FCCA1F2D27394C1F00D5CFCA /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F2E27394C6600D5CFCA /* FileUtilsForIOS.h */,
+				FCCA1F2F27394C6600D5CFCA /* FileUtilsForIOS.mm */,
+				3A8AC5D82931EAC00078DF7E /* UIImage+TransferImageData.h */,
+				3A8AC5D92931EAC00078DF7E /* UIImage+TransferImageData.mm */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		FCCA1F3227394C7000D5CFCA /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FCCA1F3327394C9D00D5CFCA /* BaseGLUtils.cpp */,
+				FCCA1F3427394C9D00D5CFCA /* BaseGLUtils.hpp */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FCCA1EB9273945CE00D5CFCA /* ImageEffect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCCA1EC3273945CE00D5CFCA /* Build configuration list for PBXNativeTarget "ImageEffect" */;
+			buildPhases = (
+				FCCA1EB6273945CE00D5CFCA /* Sources */,
+				FCCA1EB7273945CE00D5CFCA /* Frameworks */,
+				FCCA1EB8273945CE00D5CFCA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ImageEffect;
+			productName = ImageEffect;
+			productReference = FCCA1EBA273945CE00D5CFCA /* libImageEffect.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FCCA1EB2273945CE00D5CFCA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					FCCA1EB9273945CE00D5CFCA = {
+						CreatedOnToolsVersion = 12.3;
+					};
+				};
+			};
+			buildConfigurationList = FCCA1EB5273945CE00D5CFCA /* Build configuration list for PBXProject "ImageEffect" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FCCA1EB1273945CE00D5CFCA;
+			productRefGroup = FCCA1EBB273945CE00D5CFCA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FCCA1EB9273945CE00D5CFCA /* ImageEffect */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FCCA1EB6273945CE00D5CFCA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A8AC5D72931E0200078DF7E /* InputImageFrameBuffer.cpp in Sources */,
+				FCCA1F242739488200D5CFCA /* BaseFilter.cpp in Sources */,
+				FCCA1EE7273947EF00D5CFCA /* Program.cpp in Sources */,
+				FCCA1F3527394C9D00D5CFCA /* BaseGLUtils.cpp in Sources */,
+				3AA8BF502987C63300F0BEB4 /* CopyFilter.cpp in Sources */,
+				FC29E7AA273AAB31003F6696 /* EffectEngine.cpp in Sources */,
+				FC29E7B0273B6B4D003F6696 /* cJSON.c in Sources */,
+				FC29E7B4273B6B80003F6696 /* EffectConfigParser.cpp in Sources */,
+				3A8AC5DA2931EAC00078DF7E /* UIImage+TransferImageData.mm in Sources */,
+				FCCA1F3027394C6600D5CFCA /* FileUtilsForIOS.mm in Sources */,
+				FCCA1EBF273945CE00D5CFCA /* ImageEffect.m in Sources */,
+				FCCA1F202739488200D5CFCA /* BackgroundMeshFilter.cpp in Sources */,
+				FCCA1F232739488200D5CFCA /* FilterChain.cpp in Sources */,
+				FCCA1F262739488200D5CFCA /* FilterNode.cpp in Sources */,
+				3A8AC5DD2938695C0078DF7E /* OutputFrameBuffer.cpp in Sources */,
+				FCCA1F212739488200D5CFCA /* FilterFactory.cpp in Sources */,
+				FCCA1EE6273947EF00D5CFCA /* FrameBuffer.cpp in Sources */,
+				FCCA1EE9273947EF00D5CFCA /* FrameBufferPool.cpp in Sources */,
+				FCCA1F252739488200D5CFCA /* FilterNodeDescription.cpp in Sources */,
+				FCCA1F1E2739488200D5CFCA /* MeshFilter.cpp in Sources */,
+				FCCA1EE8273947EF00D5CFCA /* ProgramPool.cpp in Sources */,
+				FCCA1ECD2739473D00D5CFCA /* BaseLog.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FCCA1EC1273945CE00D5CFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FCCA1EC2273945CE00D5CFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FCCA1EC4273945CE00D5CFCA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		FCCA1EC5273945CE00D5CFCA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FCCA1EB5273945CE00D5CFCA /* Build configuration list for PBXProject "ImageEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCA1EC1273945CE00D5CFCA /* Debug */,
+				FCCA1EC2273945CE00D5CFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCCA1EC3273945CE00D5CFCA /* Build configuration list for PBXNativeTarget "ImageEffect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FCCA1EC4273945CE00D5CFCA /* Debug */,
+				FCCA1EC5273945CE00D5CFCA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FCCA1EB2273945CE00D5CFCA /* Project object */;
+}

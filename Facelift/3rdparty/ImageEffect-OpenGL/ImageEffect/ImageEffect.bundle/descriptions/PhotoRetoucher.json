@@ -1,0 +1,12 @@
+[
+    {
+        "id": "begin",
+        "nextIDs": ["mesh"]
+    },
+    {
+        "id": "mesh",
+        "filterDesc": {
+            "type": "BackgroundMeshFilter"
+        }
+    }
+]

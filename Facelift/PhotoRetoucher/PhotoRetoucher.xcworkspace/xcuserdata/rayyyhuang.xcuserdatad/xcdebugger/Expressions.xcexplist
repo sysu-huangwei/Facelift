@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "effect::PointFilter::renderToFrameBuffer(std::__1::shared_ptr&lt;effect::FrameBuffer&gt;):PointFilter.cpp">
+         <PersistentStrings>
+            <PersistentString
+               value = "points[1]">
+            </PersistentString>
+            <PersistentString
+               value = "points[2]">
+            </PersistentString>
+            <PersistentString
+               value = "points[0]">
+            </PersistentString>
+            <PersistentString
+               value = "points[3]">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
