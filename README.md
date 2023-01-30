@@ -51,3 +51,6 @@
 
 ### 效果图：<br>
 ![形变效果图](https://img-blog.csdnimg.cn/410856d7920141dfbe90ca34129496a5.gif)
+
+### 源代码工程：[https://github.com/sysu-huangwei/Facelift](https://github.com/sysu-huangwei/Facelift)
+### 文档：[https://blog.csdn.net/q345911572/article/details/128758125](https://blog.csdn.net/q345911572/article/details/128758125)
